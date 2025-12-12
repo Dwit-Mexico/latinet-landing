@@ -1,6 +1,13 @@
 <script lang="ts">
     import * as m from "$lib/paraglide/messages";
     import Icon from "@iconify/svelte";
+    import { getYoutubeModal } from "$lib/stores/youtube-modal-store.svelte";
+
+    const modal = getYoutubeModal();
+
+    function handleOpenVideo() {
+        modal.open("https://youtu.be/2g3ARDQgFmg");
+    }
 </script>
 
 <div
@@ -20,20 +27,19 @@
         <h3 class="text-xl md:text-2xl">
             {m.shops_and_businesses_title()}
         </h3>
-        <a
-            href="https://youtu.be/2g3ARDQgFmg"
-            target="_blank"
+        <button
+            onclick={handleOpenVideo}
             class="w-fit flex flex-col justify-center items-center"
         >
             <Icon
                 icon="bi:play-btn-fill"
                 class="size-20 md:size-24 text-blue-900"
             />
-            <button
+            <span
                 class="text-blue-700 rounded-md text-md md:text-[22px] transform -translate-y-2 md:-translate-y-4"
             >
                 {m.label_play_video()}
-            </button>
-        </a>
+            </span>
+        </button>
     </div>
 </div>

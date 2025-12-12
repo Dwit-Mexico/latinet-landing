@@ -2,6 +2,9 @@
     import * as m from "$lib/paraglide/messages";
     import Icon from "@iconify/svelte";
     import BrandBlock from "../components/brand-block.svelte";
+    import { getYoutubeModal } from "@/stores/youtube-modal-store.svelte";
+
+    const modal = getYoutubeModal();
 
     const paragraphs = [
         m.ambassadors_paragraph_1(),
@@ -10,6 +13,10 @@
         m.ambassadors_paragraph_4(),
         m.ambassadors_paragraph_5(),
     ];
+
+    function handleOpenVideo() {
+        modal.open("https://youtu.be/7o0dRoIuYdg");
+    }
 </script>
 
 <div>
@@ -42,21 +49,20 @@
             </div>
         </div>
         <div class="w-full flex justify-center">
-            <a
-                href="https://youtu.be/7o0dRoIuYdg"
-                target="_blank"
+            <button
+                onclick={handleOpenVideo}
                 class="w-fit flex flex-col justify-center items-center"
             >
                 <Icon
                     icon="bi:play-btn-fill"
                     class="size-20 md:size-24 text-blue-900"
                 />
-                <button
+                <span
                     class="text-blue-700 rounded-md text-md md:text-[22px] transform -translate-y-2 md:-translate-y-4"
                 >
                     {m.label_play_video()}
-                </button>
-            </a>
+                </span>
+            </button>
         </div>
     </div>
 </div>

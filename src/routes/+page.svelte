@@ -3,7 +3,7 @@
     import VideoBlock from "./components/video-block.svelte";
 </script>
 
-<div class="w-full flex flex-col">
+<div class="h-full w-full flex flex-col">
     <BrandBlock />
     <VideoBlock />
 </div>

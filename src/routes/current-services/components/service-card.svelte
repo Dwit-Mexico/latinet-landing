@@ -1,6 +1,9 @@
 <script lang="ts">
     import Icon from "@iconify/svelte";
     import * as m from "$lib/paraglide/messages";
+    import { getYoutubeModal } from "$lib/stores/youtube-modal-store.svelte";
+
+    const modal = getYoutubeModal();
 
     const {
         src,
@@ -9,6 +12,11 @@
         videoHref,
     }: { src: string; alt: string; summary: string; videoHref?: string } =
         $props();
+
+    function handleOpenVideo() {
+        if (!videoHref) return;
+        modal.open(videoHref);
+    }
 </script>
 
 <div
@@ -28,21 +36,20 @@
 
     {#if videoHref}
         <div class="w-full flex justify-center">
-            <a
-                href={videoHref}
-                target="_blank"
+            <button
+                onclick={handleOpenVideo}
                 class="w-fit flex flex-col justify-center items-center"
             >
                 <Icon
                     icon="bi:play-btn-fill"
                     class="size-20 md:size-28 text-blue-900"
                 />
-                <button
+                <span
                     class="text-blue-700 rounded-md text-md md:text-[22px] transform -translate-y-2 md:-translate-y-4"
                 >
                     {m.label_play_video()}
-                </button>
-            </a>
+                </span>
+            </button>
         </div>
     {:else}
         <div></div>

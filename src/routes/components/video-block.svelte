@@ -1,11 +1,18 @@
 <script lang="ts">
     import * as m from "$lib/paraglide/messages";
     import Icon from "@iconify/svelte";
+    import { getYoutubeModal } from "$lib/stores/youtube-modal-store.svelte";
+
+    const modal = getYoutubeModal();
+
+    function handleOpenVideo() {
+        modal.open("https://youtu.be/frc2dvd5J6U");
+    }
 </script>
 
 <div class="relative h-[64svh] md:h-full flex items-center">
     <video
-        class="w-full h-full h-min-[420px] md:h-[630px] object-cover"
+        class="w-full h-full h-min-[420px] md:h-[630px] object-cover md:object-fill"
         autoplay
         muted
         loop
@@ -34,21 +41,20 @@
             </p>
         </div>
         <div class="flex-1 flex justify-center items-center">
-            <a
-                href="https://youtu.be/frc2dvd5J6U"
-                target="_blank"
+            <button
+                onclick={handleOpenVideo}
                 class="w-fit flex flex-col justify-center items-center"
             >
                 <Icon
                     icon="bi:play-btn-fill"
                     class="size-20 md:size-28 text-white"
                 />
-                <button
+                <span
                     class="text-white rounded-md text-md md:text-2xl transform -translate-y-2 md:-translate-y-4"
                 >
                     {m.label_play_video()}
-                </button>
-            </a>
+                </span>
+            </button>
         </div>
     </div>
 </div>
