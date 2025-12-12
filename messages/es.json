@@ -1,0 +1,43 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "hello_world": "Hello, {name} from es!",
+  "sidebar_platform": "Plataforma",
+  "sidebar_": "Platform",
+  "menu_dashboard": "Panel",
+  "menu_access": "Accesos",
+  "menu_access_user": "Usuarios",
+  "menu_access_roles": "Roles",
+  "menu_management": "Administrar",
+  "menu_management_categories": "Categorias",
+  "menu_management_products": "Productos",
+  "menu_home": "Inicio",
+  "menu_current_services": "Servicios Actuales",
+  "menu_about_us": "¿Quienes Somos?",
+  "menu_comming_soon": "Próximo Servicio",
+  "menu_shops_and_businesses": "Tiendas y Negocios",
+  "menu_ambassadors": "Embajadores",
+  "home_banner_title": "Nuestra Red Latina",
+  "home_banner_description": "Negocios, Servicios, Productos y Oportunidades para todos.",
+  "label_play_video": "Ver Video",
+
+  "current_services_title": "Servicios Actuales",
+  "current_services_description": "Servicios utiles para todos.",
+  "current_service_aml_summary": "AML 360 protege su agencia MSB demultas federales y riesgo de cierre. Automatizamos su Manual AML, registros KYC y conciliación de efectivo para una defensa legal total.",
+  "current_service_health_at_home": "SALUD EN CASA es la asistencia médica 24/7 que protege a cinco miembros de su familia, aquí y en el extranjero, por solo $98 USD anuales. Consultas ilimitadas, visitas a domicilio en México y su receta médica legal en EE. UU.",
+  "current_service_upfunding": "Upfunding se especializa en adelantos de efectivo adaptados a las necesidades del empresario latino. Con un enfoque personalizado y un proceso sencillo, nuestro compromiso es impulsar el crecimiento de tu negocio.",
+
+  "about_us_work_team_title": "Remesas",
+  "about_us_work_team_description": "Somos un equipo de profesionales con experiencia directa en el corazón de la industria de las transferencias de dinero (remesas) en los Estados Unidos.\n\nNuestras filas están compuestas por directores y managers que, tras años de trabajar en las principales compañías remesadoras, identificaron una necesidad crítica en el mercado: consolidar una red de servicios sólida y eficiente que las propias remesadoras nunca lograron establecer.",
+  "about_us_financial_solutions_title": "Software",
+  "about_us_financial_solutions_description": "Somos expertos en desarrollo de software con un expertise comprobado en la industria de las remesas. Nuestro valor radica en crear soluciones tecnológicas propias y en adaptar e integrar servicios de terceros estratégicos. Nuestro enfoque es equipar a las agencias de la red con las herramientas digitales más robustas y eficientes del mercado.",
+
+  "shops_and_businesses_title": "Ventajas para las agencias que forman parte de la red.",
+
+  "ambassadors_title": "Un Mundo de Nuevas  Oportunidades para Todos.",
+  "ambassadors_info": "Amplia Tus Ingresos... Haciendo lo mismo....",
+  "ambassadors_paragraph_1": "Esto es para ti, que recorres las tiendas habitualmente.",
+  "ambassadors_paragraph_2": "Has invertido el activo más valioso: la confianza genuina de sus dueños.",
+  "ambassadors_paragraph_3": "Esa relación no es solo negocio, es un legado de credibilidad que te has ganado día tras día.",
+  "ambassadors_paragraph_4": "Sabes que ha llegado el momento de guiarlos hacia el cambio estratégico que no es una opción, eres su Agente de Transformación.",
+  "ambassadors_paragraph_5": "Usa esa confianza para inspirar la evolución que hoy les abrirá las puertas de mañana."
+}

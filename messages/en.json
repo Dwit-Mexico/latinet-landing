@@ -1,0 +1,43 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "hello_world": "Hello, {name} from en!",
+  "sidebar_platform": "Platform",
+  "sidebar_": "Platform",
+  "menu_dashboard": "Dashboard",
+  "menu_access": "Access",
+  "menu_access_user": "Users",
+  "menu_access_roles": "Roles",
+  "menu_management": "Management",
+  "menu_management_categories": "Categories",
+  "menu_management_products": "Products",
+  "menu_home": "Home",
+  "menu_current_services": "Current Services",
+  "menu_about_us": "About Us",
+  "menu_comming_soon": "Coming Soon",
+  "menu_shops_and_businesses": "Shops and Businesses",
+  "menu_ambassadors": "Ambassadors",
+  "home_banner_title": "Our Latin Network",
+  "home_banner_description": "Businesses, Services, Products and Opportunities for Everyone.",
+  "label_play_video": "Play Video",
+
+  "current_services_title": "Current Services",
+  "current_services_description": "Useful services for everyone.",
+  "current_service_aml_summary": "AML 360 protects your MSB agency from federal fines and the risk of closure. We automate your AML Manual, KYC records, and cash reconciliation for complete legal defense.",
+  "current_service_health_at_home": "Health at Home is 24/7 medical assistance that protects five members of your family, here and abroad, for only $98 USD annually. Unlimited consultations, home visits in Mexico, and your prescription is legal in the U.S.",
+  "current_service_upfunding": "Upfunding specializes in cash advances tailored to the needs of the Latino entrepreneur. With a personalized approach and a simple process, our commitment is to fuel your business growth.",
+
+  "about_us_work_team_title": "Remittances",
+  "about_us_work_team_description": "We are a team of professionals with direct experience at the heart of the money transfer (remittance) industry in the United States.\n\nOur team is comprised of directors and managers who, after years of working at leading remittance companies, identified a critical market need: to consolidate a robust and efficient service network that the remittance companies themselves were never able to establish.",
+  "about_us_financial_solutions_title": "Software",
+  "about_us_financial_solutions_description": "We offer a range of financial solutions tailored to the needs of the Latino community. Our services include cash advances, loans, and investment opportunities.",
+
+  "shops_and_businesses_title": "Advantages for agencies that are part of the network.",
+
+  "ambassadors_title": "A World of New Opportunities for All.",
+  "ambassadors_info": "Increase Your Income... By Doing the Same Thing...",
+  "ambassadors_paragraph_1": "This is for you, who frequents the stores.",
+  "ambassadors_paragraph_2": "You have invested the most valuable asset: the genuine trust of its owners.",
+  "ambassadors_paragraph_3": "That relationship isn't just business; it's a legacy of credibility you've earned day after day.",
+  "ambassadors_paragraph_4": "You know the time has come to guide them toward the strategic change that isn't optional; you are their Transformation Agent.",
+  "ambassadors_paragraph_5": "Use that trust to inspire the evolution that will open doors for them tomorrow."
+}

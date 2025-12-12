@@ -1,0 +1,10 @@
+{
+  "language_servers": [
+    "svelte-language-server",
+    "tailwindcss-language-server",
+    "vtsls",
+    "json-language_server",
+    "!biome",
+    "!eslint"
+  ]
+}
