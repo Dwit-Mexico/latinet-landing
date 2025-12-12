@@ -12,10 +12,14 @@
 
 <div class="relative h-[64svh] md:h-full flex items-center">
     <video
-        class="w-full h-full h-min-[420px] md:h-[630px] object-cover md:object-fill"
+        class="w-full h-full h-min-[420px] md:h-[630px] object-cover md:object-fill pointer-events-none"
         autoplay
-        muted
         loop
+        muted
+        playsinline
+        disablePictureInPicture
+        controlsList="nodownload nofullscreen noremoteplayback"
+        oncontextmenu={() => {}}
     >
         <track
             kind="captions"
