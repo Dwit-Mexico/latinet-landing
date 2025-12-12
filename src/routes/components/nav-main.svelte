@@ -24,7 +24,7 @@
 </script>
 
 <div class="w-full flex justify-end px-2">
-    <nav class="flex w-full justify-end md:justify-between items-center py-1">
+    <nav class="flex w-full justify-end items-center py-1">
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center">
             {#each menu as item}

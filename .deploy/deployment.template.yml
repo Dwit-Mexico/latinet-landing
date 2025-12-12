@@ -1,0 +1,36 @@
+services:
+  STACK_PLACEHOLDER-app:
+    image: IMAGE_PLACEHOLDER
+    environment:
+    networks:
+      - traefik_proxy
+    deploy:
+      replicas: 1
+      labels:
+        # Enable traefik
+        - "traefik.enable=true"
+
+        # Define the HTTP router (port 80) - redirects to HTTPS
+        - "traefik.http.routers.STACK_PLACEHOLDER-app-http.rule=Host(`HOST_PLACEHOLDER`) || Host(`www.HOST_PLACEHOLDER`)"
+        - "traefik.http.routers.STACK_PLACEHOLDER-app-http.entrypoints=web"
+        - "traefik.http.routers.STACK_PLACEHOLDER-app-http.middlewares=redirect-to-https"
+
+        # Define the HTTPS router (port 443)
+        - "traefik.http.routers.STACK_PLACEHOLDER-app-https.rule=Host(`HOST_PLACEHOLDER`) || Host(`www.HOST_PLACEHOLDER`)"
+        - "traefik.http.routers.STACK_PLACEHOLDER-app-https.entrypoints=websecure"
+        - "traefik.http.routers.STACK_PLACEHOLDER-app-https.tls=true"
+        - "traefik.http.routers.STACK_PLACEHOLDER-app-https.tls.certresolver=myresolver"
+
+        # Middleware for redirect HTTPS
+        - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+        - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
+
+        # Define the service and port of the container
+        - "traefik.http.services.STACK_PLACEHOLDER-app.loadbalancer.server.port=3000"
+
+        # Specify the network for Traefik
+        - "traefik.swarm.network=traefik_proxy"
+
+networks:
+  traefik_proxy:
+    external: true

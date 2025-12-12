@@ -4,7 +4,7 @@
 </script>
 
 <div
-    class="w-full max-w-xl flex px-6 py-2 gap-4 rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+    class="w-full max-w-xl flex flex-col md:flex-row px-6 py-2 gap-4 rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
 >
     <div class="min-w-72 w-72 rounded-xl overflow-hidden">
         <div class="w-72">
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col gap-2">
+    <div class="w-full flex flex-col gap-2">
         <h3 class="text-xl md:text-2xl">
             {m.shops_and_businesses_title()}
         </h3>

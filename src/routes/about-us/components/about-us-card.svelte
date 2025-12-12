@@ -9,7 +9,7 @@
 </script>
 
 <div
-    class="w-full flex px-6 py-2 justify-between gap-4 rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+    class="w-full flex flex-col md:flex-row px-6 py-2 justify-between gap-4 rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
 >
     <div class="min-w-48 w-[241px]">
         <img
