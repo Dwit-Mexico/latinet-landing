@@ -49,7 +49,7 @@
             >
                 <iframe
                     class="absolute inset-0 w-full h-full"
-                    src="https://www.youtube.com/embed/{modal.videoId}?autoplay=1"
+                    src="https://www.youtube.com/embed/{modal.videoId}?autoplay=1&vq=hd1080"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
